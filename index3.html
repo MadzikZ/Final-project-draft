@@ -1,0 +1,142 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>City Check</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/main3.css">
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+    <div class="back">
+     <div class="top">
+         <section class="intro_section">
+         <header><h1 class="title">Mover</h1></header>
+            <div class="main">
+             <div class="div1">Where is your perfect place?</div>
+             <div class="div2">Where you want to be?</div>
+            </div>
+        <!--<label class="wrapper" for="states">This label is stacked above the select</label>-->
+           <div class="div3"> 
+             <select class="city" id="city">
+                     <option selected="">Select your City</option>
+                     <option value="London">London</option>
+                     <option value="Berlin">Berlin</option>
+                     <option value="Paris">Paris</option>
+                     <option value="New York">New York</option>
+                     <option value="Warsaw">Warsaw</option>
+
+              </select>
+            </div>
+             </div> 
+          </section> 
+          <div class="content_section">
+              <h2>Mover</h2>
+        
+             <select class="city2">
+                     <option selected="">Select your new City</option>
+                     <option value="London ">London</option>
+                     <option value="Berlin">Berlin</option>
+                     <option value="Paris">Paris</option>
+                     <option value="NY">New York</option>
+                     <option value="Warsaw">Warsaw</option>
+
+              </select>
+            
+
+
+          </div>
+
+
+            <div class="output">
+               <div id="London" class="colors red"> 
+                <div class="nav">
+                <h3>London</h3>
+                 <nav>
+                  <ul>
+                   <li><a href="#Stat">Key Statistics</a></li>
+                    <li><a href="#chart">Cost of Living</a></li>
+                      <li><a href="#Enter">Enterteiment</a></li>
+                              <li><a href="#Quality">Quality of Life</a></li>
+                              <li><a href="#Job">Job & Career</a></li>
+                     </ul>
+                  </nav>
+                </div>
+                <div class="content">
+                     <div><h4 class="button1"><a name="Stat">
+                     Few statistics</a></h4>
+                      <div class="chart1">
+                      <p>Neither the bustle of New York nor the romanticism of Paris can compete with London. A new survey has found the capital to be the most popular city people want to work in. Data from over 200,000 people has revealed it’s not only the most desirable city, but the only city in the study’s top 40.As someone living and working in London, I can understand why so many people would like to be here above everywhere else. Two years ago I was lured here with dreams of an exciting, febrile city atmosphere.</p>
+                      </div>
+                     </div>
+               
+                    <div class="cost">
+                      <h4 class="button">
+                      <a name="chart">Cost of Living</a></h4>
+                         <div class="chart"><canvas id="myChart"></canvas></div>
+                    </div>
+                    <div class="Enterteiment"><h4 class="button2"><a name="Enter">Enterteiment</a></h4>
+                      <div class="chart2"><canvas id="mybarChart"></canvas></div>
+                    </div>
+        
+                    <div class="Quality"><h4><a name="Quality">Quality of Life</a></h4>
+                    <div class="chart"><canvas id="mybarChart"></canvas></div>
+                    
+                     
+                    </div>
+                    <div class="Job"><h4><a name="Job">Job & Career</a></h4>
+                     <div class="chart2"><canvas id="mybarChart"></canvas></div>
+                    </div>
+            
+
+                     
+                    </div>
+                    <div id="Berlin" class="colors yellow"> 
+                         <h3>Berlin</h3>
+                    
+                    </div>
+                    <div id="Paris" class="colors blue"> 
+                    <h3>Paris</h3>
+                    </div>
+                    <div id="NY" class="colors grey"> 
+                    <h3>New York</h3>
+                    </div>
+                    <div id="Paris" class="colors black"> 
+                    <h3>Paris</h3>
+                    </div>
+            </div>
+
+          </div>
+
+
+    </div>
+
+    <footer>2017 Madzik</footer>
+
+   
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.js"></script>
+
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>

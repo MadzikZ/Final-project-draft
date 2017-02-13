@@ -94,11 +94,14 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+/* Static Element*/
 body{
     margin: 0;
     font-family: sans-serif;
   
 }
+
 header{
     width: 100%;
     height: 20vw;
@@ -114,137 +117,231 @@ h1{
     font-size: 10rem;
     padding: 0;
     margin: 0;
-    color: grey;
-    animation: bounceIn 3s;
+    color: #F6F3F3;
+    animation: bounceIn 2s;
 }
 h2{
     text-align: left;
     font-size: 6rem;
     margin: 0;
-    color: grey;
+    padding-left: 10px;
+    color: #F6F3F3;
+    animation: bounceIn 2s;
 }
 
+h3{
+  color: #F6F3F3;
+  font-size: 20px;
+  margin: 0;
+  float: left;
+  padding-top: 10px;
+  padding-left: 10px;
+}
 
+h4{
+  color:grey;
+  font-size: 20px;
+  margin: 0;
+  padding: 10px;
+  border:1px solid grey;
+  width: 20vw;
+  border-radius: 3px;
+
+  animation: bounceIn 2s;
+}
+nav{
+  float: right;
+  width: 60%;
+  margin: 0;
+}
+
+footer {
+  background: grey;
+  color: white;
+  text-align: center;
+  opacity: 0.9;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 12px 30px;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+/*moving element*/
 
 
 .top{
     background:url('../pexels-photo-29773.jpg')no-repeat;
     background-size: cover;
-    background-attachment: clip;
     opacity: 0.7;
-    font-size: 40px;
-    height: 100vw;
-    width: 100vw;
+    min-height: 700px;
     margin: 0;
     padding: 0px;
-  
-}
-.back{
+  }
 
-       height: 100vw;
-       width: 100vw;
-       margin: 0;  
-}
-.main{
- width:100vw;
- height:10vw;
- padding-top: 70px;
+
+.main {
+
  border: 2px solid white;
- background-color:#ccc;
- margin: 0;
- opacity: 0.8;
+ background-color:#F6F3F3;
+ opacity: 0.7;
+ font-size: 35px;
+ font-weight: 200;
  text-align: center;
+ vertical-align: center;
+ padding: 50px;
 }
 
-
+/* hidden section*/
 
 .div2 {
-color:white;
+ color:grey;
  display: none;
- background-color:#ccc;
+ background-color:#F6F3F3;
+ opacity: 0.9;
  margin: 0;
+
 }
 
 .div3 {
- width:100vw;
- height:5vw;
- padding: 30px;
+ padding: 50px;
+ color: grey;
  display: none;
  align-content: center;
  text-align: center;
  margin: 0;
 }
+
 /* -------------------- Select Box Styles: bavotasan.com Method (with special adaptations by ericrasch.com) */
 /* -------------------- Source: http://bavotasan.com/2011/style-select-box-using-only-css/ */
 
 .city {
     color: grey;
-     background: linear-gradient(white,#ccc); 
+    background: linear-gradient(white,#ccc); 
     border-radius: 4px;
     font-size: 20px;
-    padding: 20px;
     width: 550px;
     height: 60px;
     align-content: center;
     margin-top: 0px;
 
+
 }
 
-/* Second step page*/
+/* Second Part of the page*/
+
+
 .content_section {
     color:white;
-    background:url('../pexels-photo-29773.jpg') no-repeat center center;
-       height: 15vw;
+    background:url('../pexels-photo-29773.jpg') no-repeat;
+    background-origin: 100%;
+       height: 9vw;
        width: 100vw;
        font-size: 18px;
        text-align: left;
-       display: none;
        border-bottom: 2px solid white;
        margin: 0;
-       padding: 0;
+       padding-bottom: 0;
        font-size: 20px;
+       display: none;
+
 
 }
+
 
 .colors{
-    background: #ccc;
-    margin: 0;
-    height: 100vw;
-    width: 100vw;
-    display: none;
 
-}
-.output {
-    width: 100vw;
+    display: none;
 }
 .city2 {
-    color: white;
-    background: linear-gradient(white,#ccc); 
-    box-shadow: 10px 10px 10px white;
+    color: grey;
+    background: linear-gradient(white); 
+    box-shadow: 3px 3px  grey;
     border-radius: 4px;
-    padding: 20px;
-    width: 250px;
-    height: 30px;
+    width: 300px;
+    height: 40px;
+    float: right;
+    font-size:18px;
     margin-top: 0px;
- float: right;
- margin-left:20px;
+    position: absolute;
+    top:60px;
+    right: 10px;
+}
+
+.output {
+  background: white;
+  opacity: 0.7;
+  margin: 0;
+  height: 100vw;
+  width: 100%;
+  display: none;
+  overflow: scroll;
+}
+.content {
+  clear: both;
+  height: 100vw;
+}
+
+.nav {
+    background-color: #333;
+    background-size: 100%;
+    width: 100vw;
+    height: 50px;
+}
+/* Visualization Part*/
+.MyChart {
+ width: 60%;
+
 
 }
 
-canvas {
-    height: 200px;
-    width: 200px;
+
+
+.chart {
+  position:relative; 
+  top:10px; 
+  left:10px; 
+  width:600px; 
+  height:600px;
+      display: none;
+
 }
+.chart2 {
+    position:relative; 
+  top:10px; 
+  left:10px; 
+  width:800px; 
+  height:500px;
+  display: none;
+}
+/*.spider-chart {
+  width: 200;
+  height: 300;
+}*/
 
 /*keyframes*/
 @keyframes bounceIn {
   0% {
-    transform: scale(0.1);
+    transform: scale(0.2);
     opacity: 0;
-  }
-  60% {
-    transform: scale(1.2);
-    opacity: 1;
   }
   100% {
     transform: scale(1);
